@@ -1,0 +1,74 @@
+﻿@model DTPReg5.Models.Registration
+
+@{
+    ViewBag.Title = @Resources.Resource.Details;
+}
+
+<h2>@Resources.Resource.Details</h2>
+
+<div>
+    <h4>@Resources.Resource.Issue</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PIP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PIP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NPos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NPos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_Birth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_Birth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Marka_Auto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marka_Auto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nomer_Auto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nomer_Auto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_Por)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_Por)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink(@Resources.Resource.Edit, "Edit", new { id = Model.Id }) |
+    @Html.ActionLink(@Resources.Resource.Back, "Index")
+</p>

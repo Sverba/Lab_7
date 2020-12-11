@@ -1,0 +1,80 @@
+﻿@model DTPReg5.Models.Registration
+
+@{
+    ViewBag.Title = @Resources.Resource.Delete;
+}
+
+<h2>@Resources.Resource.Delete</h2>
+
+<h3>@Resources.Resource.DeleteOrNo</h3>
+<div>
+    <h4>@Resources.Resource.Issue</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PIP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PIP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NPos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NPos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_Birth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_Birth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Marka_Auto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marka_Auto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nomer_Auto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nomer_Auto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_Por)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_Por)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value=@Resources.Resource.ButtonDelete class="btn btn-default" /> |
+            @Html.ActionLink(@Resources.Resource.Back, "Index")
+        </div>
+    }
+</div>
